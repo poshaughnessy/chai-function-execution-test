@@ -10,7 +10,8 @@ describe("my-object", function () {
   });
 
   it("should not execute the `doNotExecutionThisFunction` (check the logs output)", function() {
-    expect(myObject.doNotExecutionThisFunction).to.exist;
+    expect(myObject.doNotExecutionThisFunction).to.be.a.function;
+    expect(myObject.doNotExecutionThisFunction).to.not.equal(2);
   });
 
 });
