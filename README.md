@@ -11,7 +11,7 @@ The only log statement which appears in the console is _">>> This is OK to execu
 _">>> This should NOT be called!"_ is not logged, which shows that the function is not being executed in this test:
 
 ```
-expect(myObject.executeThisFunction).to.exist;
+expect(myObject.doNotExecuteThisFunction).to.exist;
 ```
 
 
